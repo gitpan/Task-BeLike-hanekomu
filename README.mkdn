@@ -1,27 +1,45 @@
-This is the Perl distribution Task-BeLike-hanekomu.
+# NAME
 
-## Installation
+Task::BeLike::hanekomu - install modules I like
 
-Task-BeLike-hanekomu installation is straightforward. If your CPAN shell is
-set up, you should just be able to do
+# SYNOPSIS
 
-    % cpan Task::BeLike::hanekomu
+# None
 
-Download it, unpack it, then build it as per the usual:
+# DESCRIPTION
 
-    % perl Makefile.PL
-    % make && make test
+This [Task](http://search.cpan.org/perldoc?Task) installs modules that I need to work with. They are listed in
+this distribution's `Makefile.PL`.
 
-Then install it:
+# BUGS AND LIMITATIONS
 
-    % make install
+No bugs have been reported.
 
-## Documentation
+Please report any bugs or feature requests through the web interface at
+<http://rt.cpan.org>.
 
-Task-BeLike-hanekomu documentation is available as in POD. So you can do:
+# INSTALLATION
 
-    % perldoc Task::BeLike::hanekomu
+See perlmodinstall for information and options on installing Perl modules.
 
-to read the documentation online with your favorite pager.
+# AVAILABILITY
 
-Marcel Gruenauer
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN site
+near you. Or see <http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
+
+The development version lives at
+<http://github.com/hanekomu/task-belike-hanekomu/>. Instead of sending
+patches, please fork this project using the standard git and github
+infrastructure.
+
+# AUTHORS
+
+Marcel Gr&uuml;nauer, `<marcel@cpan.org>`
+
+# COPYRIGHT AND LICENSE
+
+Copyright 2009 by Marcel Gr&uuml;nauer
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.

@@ -20,12 +20,53 @@ no_index:
     - t
     - xt
 requires:
-  App::Ack: 1.90
-  Web::Scraper: 0.31
+  AnyEvent: 0
+  App::Ack: 0
+  App::Rgit: 0
+  Coro: 0
+  DBD::SQLite: 0
+  DBI: 0
+  Devel::Loaded: 0
+  Devel::SearchINC: 0
+  File::Slurp: 0
+  File::Which: 0
+  LWP: 0
+  Module::Install: 0
+  Module::Install::AuthorTests: 0
+  Module::Install::Bugtracker: 0
+  Module::Install::ExtraTests: 0
+  Module::Install::Homepage: 0
+  Module::Install::ReadmeFromPod: 0
+  Module::Install::Repository: 0
+  Moose: 0
+  Perl::Tidy: 0
+  Plack: 0
+  Pod::Wordlist::hanekomu: 0
+  ShipIt: 0
+  ShipIt::Step::DistClean: 0
+  ShipIt::Step::DistTestExtra: 0
+  ShipIt::Step::Manifest: 0
+  ShipIt::Step::Twitter: 0
+  Template: 0
+  Test::CheckChanges: 0
+  Test::Compile: 0
+  Test::Differences: 0
+  Test::DistManifest: 0
+  Test::HasVersion: 0
+  Test::MinimumVersion: 0
+  Test::Perl::Critic: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
+  Test::Portability::Files: 0
+  Test::Spelling: 0
+  Test::Synopsis: 0
+  Test::YAML::Meta: 0
+  Web::Scraper: 0
+  YAML: 0
   perl: 5.8.0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-hanekomu
   homepage: http://search.cpan.org/dist/Task-BeLike-hanekomu/
   license: http://dev.perl.org/licenses/
   repository: git://github.com/hanekomu/task-belike-hanekomu.git
-version: 0.01
+version: 0.02
