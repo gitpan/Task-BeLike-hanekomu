@@ -1,89 +1,66 @@
-# No need to smoke this distribution
-exit 0 if $ENV{AUTOMATED_TESTING};
-use inc::Module::Install;
-include 'Module::AutoInstall';
 
-# don't install so rerunning "install Task::BeLike::hanekomu" will check all
-# dependencies anew
-sub MY::install { "install ::\n" }
-name 'Task-BeLike-hanekomu';
-all_from 'lib/Task/BeLike/hanekomu.pm';
-readme_from_pod;
-readme_markdown_from_pod;
-auto_set_homepage;
-auto_set_bugtracker;
-auto_set_repository;
+use strict;
+use warnings;
 
-requires 'YAML';
-requires 'App::Ack';
-requires 'App::Rgit';
-requires 'DBI';
-requires 'DBD::SQLite';
-requires 'Devel::Loaded';
-requires 'File::Which';
-requires 'File::Slurp';
-requires 'Devel::SearchINC';
-# requires 'Devel::NYTProf';   # causes segfault
-requires 'Test::Differences';
-requires 'Module::Install';
-requires 'Module::Install::ExtraTests';
-requires 'Module::Install::AuthorTests';
-requires 'Module::Install::ReadmeFromPod';
-requires 'Module::Install::Repository';
-requires 'Module::Install::Bugtracker';
-requires 'Module::Install::Homepage';
-requires 'LWP';
-requires 'Moose';
-requires 'Perl::Tidy';
-requires 'ShipIt';
-requires 'ShipIt::Step::DistClean';
-requires 'ShipIt::Step::DistTestExtra';
-requires 'ShipIt::Step::Manifest';
-requires 'ShipIt::Step::Twitter';
-requires 'Test::Compile';
-requires 'Test::Perl::Critic';
-requires 'Test::Pod';
-requires 'Test::Spelling';
-requires 'Template';
-requires 'Pod::Wordlist::hanekomu';
-requires 'Test::Pod::Coverage';
-# requires 'Test::Kwalitee';     # always reported 'missing'
-requires 'Test::YAML::Meta';
-requires 'Test::Portability::Files';
-requires 'Test::Synopsis';
-requires 'Test::MinimumVersion';
-requires 'Test::HasVersion';
-requires 'Test::CheckChanges';
-requires 'Test::DistManifest';
+ BEGIN { require 5.008; } 
 
-requires 'Web::Scraper';
-requires 'Coro';
-requires 'AnyEvent';
-requires 'Plack';
-if (0) {
-}
-test_requires 'Test::More' => '0.70';
-extra_tests;
-author_requires 'ShipIt';
-author_requires 'ShipIt::Step::DistClean';
-author_requires 'ShipIt::Step::DistTestExtra';
-author_requires 'ShipIt::Step::Manifest';
-author_requires 'ShipIt::Step::Twitter';
-author_requires 'Test::Compile';
-author_requires 'Test::Perl::Critic';
-author_requires 'Test::Pod';
-author_requires 'Test::Spelling';
-author_requires 'Pod::Wordlist::hanekomu';
-author_requires 'Test::Pod::Coverage';
+use ExtUtils::MakeMaker 6.11;
 
-# author_requires 'Test::Kwalitee';
-author_requires 'Test::YAML::Meta';
-author_requires 'Test::Portability::Files';
-author_requires 'Test::Synopsis';
-author_requires 'Test::MinimumVersion';
-author_requires 'Test::HasVersion';
-author_requires 'Test::CheckChanges';
-author_requires 'Test::DistManifest';
-auto_install;
-auto_include;
-WriteAll;
+
+
+my %WriteMakefileArgs = (
+                       'test' => {
+                                   'TESTS' => 't/*.t'
+                                 },
+                       'NAME' => 'Task::BeLike::hanekomu',
+                       'DISTNAME' => 'Task-BeLike-hanekomu',
+                       'CONFIGURE_REQUIRES' => {
+                                                 'ExtUtils::MakeMaker' => '6.11'
+                                               },
+                       'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
+                       'BUILD_REQUIRES' => {},
+                       'ABSTRACT' => 'Install modules I like',
+                       'EXE_FILES' => [],
+                       'VERSION' => '1.100810',
+                       'PREREQ_PM' => {
+                                        'Scalar::Util' => '0',
+                                        'Devel::SearchINC' => '0',
+                                        'YAML' => '0',
+                                        'Devel::NYTProf' => '0',
+                                        'DBD::SQLite' => '0',
+                                        'File::Which' => '0',
+                                        'App::Ack' => '0',
+                                        'Perl::Tidy' => '0',
+                                        'Task::Dist::Zilla' => '0',
+                                        'Devel::Loaded' => '0',
+                                        'File::Find' => '0',
+                                        'Web::Scraper' => '0',
+                                        'Dist::Zilla::PluginBundle::MARCEL' => '0',
+                                        'App::Rgit' => '0',
+                                        'Pod::Wordlist::hanekomu' => '0',
+                                        'File::Slurp' => '0',
+                                        'DBI' => '0',
+                                        'English' => '0',
+                                        'AnyEvent' => '0',
+                                        'Plack' => '0',
+                                        'Coro' => '0',
+                                        'App::cpanminus' => '0',
+                                        'Pod::Weaver::PluginBundle::MARCEL' => '0',
+                                        'Carp' => '0',
+                                        'Test::More' => '0.88',
+                                        'Test::Differences' => '0',
+                                        'File::Temp' => '0',
+                                        'App::cpanoutdated' => '0',
+                                        'LWP' => '0'
+                                      },
+                       'LICENSE' => 'perl'
+                     );
+
+
+delete $WriteMakefileArgs{LICENSE}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.31) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+

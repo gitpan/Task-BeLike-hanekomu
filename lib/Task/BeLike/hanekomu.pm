@@ -1,59 +1,116 @@
-package Task::BeLike::hanekomu;
-
 use 5.008;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
-
+package Task::BeLike::hanekomu;
+our $VERSION = '1.100810';
+# ABSTRACT: Install modules I like
 1;
 
+
 __END__
+=pod
 
 =head1 NAME
 
-Task::BeLike::hanekomu - install modules I like
+Task::BeLike::hanekomu - Install modules I like
 
-=head1 SYNOPSIS
+=head1 VERSION
 
-# None
+version 1.100810
 
 =head1 DESCRIPTION
 
 This L<Task> installs modules that I need to work with. They are listed in
 this distribution's C<Makefile.PL>.
 
-=head1 BUGS AND LIMITATIONS
+=head1 TASK CONTENTS
 
-No bugs have been reported.
+=head2 Toolchain
 
-Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
+=head3 App::Ack
+
+=head3 App::Rgit
+
+=head3 Devel::NYTProf
+
+=head3 Devel::Loaded
+
+=head3 Devel::SearchINC
+
+=head3 Perl::Tidy
+
+=head3 Pod::Wordlist::hanekomu
+
+=head3 Task::Dist::Zilla
+
+=head3 Dist::Zilla::PluginBundle::MARCEL
+
+=head3 Pod::Weaver::PluginBundle::MARCEL
+
+=head3 App::cpanoutdated
+
+=head3 App::cpanminus
+
+=head2 Useful modules
+
+=head3 YAML
+
+=head3 DBI
+
+=head3 DBD::SQLite
+
+=head3 File::Which
+
+=head3 File::Slurp
+
+=head3 Test::Differences
+
+=head2 Web, Networking, Events
+
+=head3 LWP
+
+=head3 Web::Scraper
+
+=head3 Coro
+
+=head3 AnyEvent
+
+=head3 Plack
+
+=head1 AUTHOR
+
+  Marcel Gruenauer <marcel@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2009 by Marcel Gruenauer.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 INSTALLATION
 
 See perlmodinstall for information and options on installing Perl modules.
 
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-hanekomu>.
+
 =head1 AVAILABILITY
 
 The latest version of this module is available from the Comprehensive Perl
-Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN site
-near you. Or see L<http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see
+L<http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
 
 The development version lives at
-L<http://github.com/hanekomu/task-belike-hanekomu/>. Instead of sending
-patches, please fork this project using the standard git and github
-infrastructure.
-
-=head1 AUTHORS
-
-Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright 2009 by Marcel GrE<uuml>nauer
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+L<http://github.com/hanekomu/Task-BeLike-hanekomu/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
 =cut
+

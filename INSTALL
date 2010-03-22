@@ -1,9 +1,10 @@
+
 This is the Perl distribution Task-BeLike-hanekomu.
 
 ## Installation
 
-Task-BeLike-hanekomu installation is straightforward. If your CPAN shell is
-set up, you should just be able to do
+Task-BeLike-hanekomu installation is straightforward.
+If your CPAN shell is set up, you should just be able to do
 
     % cpan Task::BeLike::hanekomu
 
@@ -18,10 +19,9 @@ Then install it:
 
 ## Documentation
 
-Task-BeLike-hanekomu documentation is available as in POD. So you can do:
+Task-BeLike-hanekomu documentation is available as in POD.
+So you can do:
 
     % perldoc Task::BeLike::hanekomu
 
-to read the documentation online with your favorite pager.
-
-Marcel Gruenauer
+to read the documentation with your favorite pager.
