@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Task::BeLike::hanekomu;
-our $VERSION = '1.100810';
+BEGIN {
+  $Task::BeLike::hanekomu::VERSION = '1.101400';
+}
 # ABSTRACT: Install modules I like
 1;
 
@@ -17,7 +19,7 @@ Task::BeLike::hanekomu - Install modules I like
 
 =head1 VERSION
 
-version 1.100810
+version 1.101400
 
 =head1 DESCRIPTION
 
@@ -52,6 +54,8 @@ this distribution's C<Makefile.PL>.
 
 =head3 App::cpanminus
 
+=head3 App::distfind
+
 =head2 Useful modules
 
 =head3 YAML
@@ -76,7 +80,7 @@ this distribution's C<Makefile.PL>.
 
 =head3 AnyEvent
 
-=head3 Plack
+=head3 Task::Plack
 
 =head1 AUTHOR
 

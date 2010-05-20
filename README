@@ -2,7 +2,7 @@ NAME
     Task::BeLike::hanekomu - Install modules I like
 
 VERSION
-    version 1.100810
+    version 1.101400
 
 DESCRIPTION
     This Task installs modules that I need to work with. They are listed in
@@ -22,6 +22,7 @@ TASK CONTENTS
    Pod::Weaver::PluginBundle::MARCEL
    App::cpanoutdated
    App::cpanminus
+   App::distfind
   Useful modules
    YAML
    DBI
@@ -34,7 +35,7 @@ TASK CONTENTS
    Web::Scraper
    Coro
    AnyEvent
-   Plack
+   Task::Plack
 AUTHOR
       Marcel Gruenauer <marcel@cpan.org>
 

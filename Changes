@@ -1,5 +1,8 @@
 Revision history for Perl extension Task-BeLike-hanekomu
 
+1.101400  2010-05-20 14:06:31 Europe/Vienna
+    - added App::distfind, changed from Plack to Task::Plack
+
 1.100810  2010-03-22 16:49:12 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
 
