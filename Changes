@@ -1,5 +1,11 @@
 Revision history for Perl extension Task-BeLike-hanekomu
 
+1.103460  2010-12-12 12:37:44 Europe/Vienna
+    - added Dist::Zilla::Plugin::Git::Init
+    - added Pod::Coverage::TrustPod
+    - instead of Task::Dist::Zilla, just require Dist::Zilla. The plugins I
+      need will be brought in via Dist::Zilla::PluginBundle::MARCEL
+
 1.101400  2010-05-20 14:06:31 Europe/Vienna
     - added App::distfind, changed from Plack to Task::Plack
 

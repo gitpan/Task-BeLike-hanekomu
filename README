@@ -2,7 +2,7 @@ NAME
     Task::BeLike::hanekomu - Install modules I like
 
 VERSION
-    version 1.101400
+    version 1.103460
 
 DESCRIPTION
     This Task installs modules that I need to work with. They are listed in
@@ -17,12 +17,14 @@ TASK CONTENTS
    Devel::SearchINC
    Perl::Tidy
    Pod::Wordlist::hanekomu
-   Task::Dist::Zilla
+   Dist::Zilla
    Dist::Zilla::PluginBundle::MARCEL
    Pod::Weaver::PluginBundle::MARCEL
+   Dist::Zilla::Plugin::Git::Init
    App::cpanoutdated
    App::cpanminus
    App::distfind
+   Pod::Coverage::TrustPod
   Useful modules
    YAML
    DBI
@@ -37,7 +39,7 @@ TASK CONTENTS
    AnyEvent
    Task::Plack
 AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+    Marcel Gruenauer <marcel@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2009 by Marcel Gruenauer.
@@ -62,7 +64,8 @@ AVAILABILITY
     <http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
 
     The development version lives at
-    <http://github.com/hanekomu/Task-BeLike-hanekomu/>. Instead of sending
-    patches, please fork this project using the standard git and github
-    infrastructure.
+    <http://github.com/hanekomu/Task-BeLike-hanekomu.git> and may be cloned
+    from <git://github.com/hanekomu/Task-BeLike-hanekomu.git>. Instead of
+    sending patches, please fork this project using the standard git and
+    github infrastructure.
 

@@ -4,7 +4,7 @@ use warnings;
 
 package Task::BeLike::hanekomu;
 BEGIN {
-  $Task::BeLike::hanekomu::VERSION = '1.101400';
+  $Task::BeLike::hanekomu::VERSION = '1.103460';
 }
 # ABSTRACT: Install modules I like
 1;
@@ -19,7 +19,7 @@ Task::BeLike::hanekomu - Install modules I like
 
 =head1 VERSION
 
-version 1.101400
+version 1.103460
 
 =head1 DESCRIPTION
 
@@ -30,61 +30,65 @@ this distribution's C<Makefile.PL>.
 
 =head2 Toolchain
 
-=head3 App::Ack
+=head3 L<App::Ack>
 
-=head3 App::Rgit
+=head3 L<App::Rgit>
 
-=head3 Devel::NYTProf
+=head3 L<Devel::NYTProf>
 
-=head3 Devel::Loaded
+=head3 L<Devel::Loaded>
 
-=head3 Devel::SearchINC
+=head3 L<Devel::SearchINC>
 
-=head3 Perl::Tidy
+=head3 L<Perl::Tidy>
 
-=head3 Pod::Wordlist::hanekomu
+=head3 L<Pod::Wordlist::hanekomu>
 
-=head3 Task::Dist::Zilla
+=head3 L<Dist::Zilla>
 
-=head3 Dist::Zilla::PluginBundle::MARCEL
+=head3 L<Dist::Zilla::PluginBundle::MARCEL>
 
-=head3 Pod::Weaver::PluginBundle::MARCEL
+=head3 L<Pod::Weaver::PluginBundle::MARCEL>
 
-=head3 App::cpanoutdated
+=head3 L<Dist::Zilla::Plugin::Git::Init>
 
-=head3 App::cpanminus
+=head3 L<App::cpanoutdated>
 
-=head3 App::distfind
+=head3 L<App::cpanminus>
+
+=head3 L<App::distfind>
+
+=head3 L<Pod::Coverage::TrustPod>
 
 =head2 Useful modules
 
-=head3 YAML
+=head3 L<YAML>
 
-=head3 DBI
+=head3 L<DBI>
 
-=head3 DBD::SQLite
+=head3 L<DBD::SQLite>
 
-=head3 File::Which
+=head3 L<File::Which>
 
-=head3 File::Slurp
+=head3 L<File::Slurp>
 
-=head3 Test::Differences
+=head3 L<Test::Differences>
 
 =head2 Web, Networking, Events
 
-=head3 LWP
+=head3 L<LWP>
 
-=head3 Web::Scraper
+=head3 L<Web::Scraper>
 
-=head3 Coro
+=head3 L<Coro>
 
-=head3 AnyEvent
+=head3 L<AnyEvent>
 
-=head3 Task::Plack
+=head3 L<Task::Plack>
 
 =head1 AUTHOR
 
-  Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -108,13 +112,12 @@ L<http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-hanekomu>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
+site near you, or see L<http://search.cpan.org/dist/Task-BeLike-hanekomu/>.
 
-The development version lives at
-L<http://github.com/hanekomu/Task-BeLike-hanekomu/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
+The development version lives at L<http://github.com/hanekomu/Task-BeLike-hanekomu.git>
+and may be cloned from L<git://github.com/hanekomu/Task-BeLike-hanekomu.git>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
 
 =cut
 
