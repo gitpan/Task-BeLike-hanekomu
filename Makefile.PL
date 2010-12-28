@@ -34,6 +34,8 @@ my %WriteMakefileArgs = (
     'App::cpanoutdated' => '0',
     'App::distfind' => '0',
     'Coro' => '0',
+    'DB::Pluggable' => '0',
+    'DB::Pluggable::StackTraceAsHTML' => '0',
     'DBD::SQLite' => '0',
     'DBI' => '0',
     'Devel::Loaded' => '0',
@@ -54,7 +56,7 @@ my %WriteMakefileArgs = (
     'Web::Scraper' => '0',
     'YAML' => '0'
   },
-  'VERSION' => '1.103460',
+  'VERSION' => '1.103620',
   'test' => {
     'TESTS' => 't/*.t'
   }

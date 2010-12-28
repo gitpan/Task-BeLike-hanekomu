@@ -4,7 +4,7 @@ use warnings;
 
 package Task::BeLike::hanekomu;
 BEGIN {
-  $Task::BeLike::hanekomu::VERSION = '1.103460';
+  $Task::BeLike::hanekomu::VERSION = '1.103620';
 }
 # ABSTRACT: Install modules I like
 1;
@@ -19,7 +19,7 @@ Task::BeLike::hanekomu - Install modules I like
 
 =head1 VERSION
 
-version 1.103460
+version 1.103620
 
 =head1 DESCRIPTION
 
@@ -33,6 +33,10 @@ this distribution's C<Makefile.PL>.
 =head3 L<App::Ack>
 
 =head3 L<App::Rgit>
+
+=head3 L<DB::Pluggable>
+
+=head3 L<DB::Pluggable::StackTraceAsHTML>
 
 =head3 L<Devel::NYTProf>
 

@@ -12,7 +12,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.102346, CPAN::Meta::Converter version 2.102400'
+generated_by: 'Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,7 +21,7 @@ name: Task-BeLike-hanekomu
 provides:
   Task::BeLike::hanekomu:
     file: lib/Task/BeLike/hanekomu.pm
-    version: 1.103460
+    version: 1.103620
 requires:
   AnyEvent: 0
   App::Ack: 0
@@ -30,6 +30,8 @@ requires:
   App::cpanoutdated: 0
   App::distfind: 0
   Coro: 0
+  DB::Pluggable: 0
+  DB::Pluggable::StackTraceAsHTML: 0
   DBD::SQLite: 0
   DBI: 0
   Devel::Loaded: 0
@@ -54,4 +56,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-hanekomu
   homepage: http://search.cpan.org/dist/Task-BeLike-hanekomu/
   repository: git://github.com/hanekomu/Task-BeLike-hanekomu.git
-version: 1.103460
+version: 1.103620

@@ -1,5 +1,8 @@
 Revision history for Perl extension Task-BeLike-hanekomu
 
+1.103620  2010-12-28 10:33:50 Europe/Vienna
+    - added DB::Pluggable and DB::Pluggable::StackTraceAsHTML
+
 1.103460  2010-12-12 12:37:44 Europe/Vienna
     - added Dist::Zilla::Plugin::Git::Init
     - added Pod::Coverage::TrustPod

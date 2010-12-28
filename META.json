@@ -4,7 +4,7 @@
       "Marcel Gruenauer <marcel@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102346, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400",
    "license" : [
       "perl_5"
    ],
@@ -28,6 +28,8 @@
             "App::cpanoutdated" : 0,
             "App::distfind" : 0,
             "Coro" : 0,
+            "DB::Pluggable" : 0,
+            "DB::Pluggable::StackTraceAsHTML" : 0,
             "DBD::SQLite" : 0,
             "DBI" : 0,
             "Devel::Loaded" : 0,
@@ -64,7 +66,7 @@
    "provides" : {
       "Task::BeLike::hanekomu" : {
          "file" : "lib/Task/BeLike/hanekomu.pm",
-         "version" : "1.103460"
+         "version" : "1.103620"
       }
    },
    "release_status" : "stable",
@@ -80,6 +82,6 @@
          "web" : "http://github.com/hanekomu/Task-BeLike-hanekomu"
       }
    },
-   "version" : "1.103460"
+   "version" : "1.103620"
 }
 
